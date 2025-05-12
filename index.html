@@ -1,25 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heidy Online</title>
-</head>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        background: #f4f4f4;
+        color: #333;
+      }
 
-<body>
-    <h1>Heidy Online</h1>
-    <p>I develop websites, web-apps, SaaS, chrome extensions, iOS apps, Macbook apps, eCommerce Stores, Shopify stores.
-    </p>
-    <a href="https://connect4-ryol.onrender.com">Connect 4</a>
-    <a href="https://lotto-generator.onrender.com/">Lotto Generator</a>
-    <a href="https://www.salespotter.xyz">Sale Spotter</a>
-    <a href="https://weather-app-uicw.onrender.com/">Weather App</a>
-    <a href="https://crypto-hub-vuhe.onrender.com">Crypto Hub</a>
-    <a href="https://itunespedia.onrender.com/">iTunespedia</a>
-    <a href="https://sharecodes.onrender.com">Sharecodes</a>
-    <a href="https://free2play.onrender.com">Free 2 Play</a>
-    <a href="https://topcharts.onrender.com">Top Charts</a>
-</body>
+      header {
+        background: #282c34;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
 
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      header p {
+        margin-top: 0.5rem;
+        font-style: italic;
+        color: #bbb;
+      }
+
+      section {
+        padding: 2rem 5%;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .about {
+        margin-bottom: 3rem;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+
+      .project-card {
+        background: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .project-card h3 {
+        margin-top: 0;
+        color: #007acc;
+      }
+
+      .project-card a {
+        color: #007acc;
+        text-decoration: none;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Heidy</h1>
+      <p>Web Developer | Problem Solver</p>
+    </header>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm a passionate developer who enjoys building web applications, learning new technologies, solving problems and automating boring tasks. I
+        specialize in JavaScript, React, and backend development with Node.js.
+      </p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <a href="https://connect4-ryol.onrender.com" target="_blank">
+            <img src="./images/connect4.png" alt="Screenshot of Connect 4 app" style="width: 100%; border-radius: 8px; margin-bottom: 1rem" />
+            <h3>Connect 4 Game</h3>
+            <p>Classic Connect 4 dots game for browser. Currently single-player, multiplayer version coming soon.</p>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://lotto-generator.onrender.com" target="_blank">
+            <img
+              src="./images/lottogenerator.png"
+              alt="Screenshot of Lotto Generator app"
+              style="width: 100%; border-radius: 8px; margin-bottom: 1rem"
+            />
+            <h3>Lotto Number Generator</h3>
+            <p>Generate as many numbers as you like for Australian lotto. Multiple game formats included.</p>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://weather-app-uicw.onrender.com" target="_blank">
+            <img src="./images/weather.png" alt="Screenshot of weather app" style="width: 100%; border-radius: 8px; margin-bottom: 1rem" />
+            <h3>Weather App</h3>
+            <p>Simple Weather widget app.</p>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://crypto-hub-vuhe.onrender.com" target="_blank">
+            <img src="./images/crypto.png" alt="Screenshot of Crypto App" style="width: 100%; border-radius: 8px; margin-bottom: 1rem" />
+            <h3>Crypto Hub</h3>
+            <p>Website for latest crypto prices.</p>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://itunespedia.onrender.com" target="_blank">
+            <img src="./images/itunespedia.png" alt="Screenshot of itunespedia app" style="width: 100%; border-radius: 8px; margin-bottom: 1rem" />
+            <h3>iTunespedia</h3>
+            <p>Search for artists, music albums, movies, songs, podcasts, ebooks and much more.</p>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://referrific.xyz" target="_blank">
+            <img src="./images/referrific.png" alt="Screenshot of Referrific app" style="width: 100%; border-radius: 8px; margin-bottom: 1rem" />
+            <h3>Referrific</h3>
+            <p>A web app to share your referral code, rate the referral providers and upvote or downvote referral codes.</p>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://free2play.onrender.com" target="_blank">
+            <img src="./images/free2play.png" alt="Screenshot of free 2 play app" style="width: 100%; border-radius: 8px; margin-bottom: 1rem" />
+            <h3>Free 2 Play</h3>
+            <p>A website that lists all free to play games on PC and console.</p>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://topcharts.onrender.com" target="_blank">
+            <img src="./images/topcharts.png" alt="Screenshot of Top charts app" style="width: 100%; border-radius: 8px; margin-bottom: 1rem" />
+            <h3>Top Charts</h3>
+            <p>A website to find out trending apps, books, movies, podcasts, music albums, etc. in your country</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 Heidy — Built with ❤️ using GitHub Pages</footer>
+  </body>
 </html>
